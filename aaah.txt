@@ -1,0 +1,8 @@
+gulp.task('op', function(){
+    var options = {
+        uri: 'localhost:3000',
+        app: 'google chrome'
+    };
+    gulp.src(__filename)
+        .pipe(open(options));
+});
