@@ -34,6 +34,8 @@ function browser_sync(cb) {
 }
 
 exports.default = series(
-	file_include_task
+	file_include_task,
+	browser_sync,
+	watcher
 )
 
